@@ -1,6 +1,39 @@
 @import "tailwindcss";
+@import './styles/theme.css';
+@import './styles/base.css';
 
-@theme{
+@theme {
   --font-sans: "Pretendard Variable", sans-serif;
+}
 
+@layer components {
+  .main-wrapper {
+    @apply mx-auto w-[90%] h-full;;
+  }
+  .main-header {
+    @apply bg-red-500 h-[2.59%]
+  }
+  .visual-banner {
+    @apply bg-blue-500 h-[11.77%]
+  }
+
+  .about-inner {
+    @apply bg-fuchsia-600 h-[8.2%]
+  }
+
+  .download-inner {
+    @apply bg-emerald-700 h-[12.06%]
+  }
+
+  .qna-inner {
+    @apply bg-pink-800 h-[22.98%]
+  }
+
+  .apply-inner {
+    @apply bg-yellow-400 h-[21.62%]
+  }
+
+   .main-footer {
+    @apply bg-teal-500 h-[20.77%]
+  }
 }
