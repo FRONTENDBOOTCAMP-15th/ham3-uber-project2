@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>visual-banner</title>
+    <link
+      rel="shortcut icon"
+      href="/favicon/likelion.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="/favicon/likelion.svg" type="image/svg+xml" />
+    <link rel="preload" as="font" href="/font/suit/SUIT-Variable.woff2" />
+    <link rel="stylesheet" href="/font/suit/SUIT-Variable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <h1 class="m-4">visual-banner</h1>
+    <hr />
+    <section
+      class="ut-banner w-[31.25rem] h-64 sm:w-[53.125rem] sm:h-[22.4375rem] lg:w-[105rem] lg:h-[25rem]"
+    >
+      <!-- 배경 -->
+      <div
+        class="banner-background bg-(image:--banner-mobile) sm:bg-(image:--banner-tablet) lg:bg-(image:--banner-desktop)"
+      ></div>
+
+      <!-- 텍스트 + 버튼 -->
+      <div
+        class="banner-content top-10 left-6 max-w-[16.25rem] sm:top-14 sm:left-10 sm:max-w-[18.75rem] lg:top-16 lg:left-[16.5rem] lg:max-w-[25rem]"
+      >
+        <h2
+          class="banner-title text-[1.775rem] sm:text-[2.3687rem] lg:text-2xl"
+        >
+          우리들의 택시, UT
+        </h2>
+        <p class="banner-desc">
+          UT로 안전하고 편리한 차량 서비스를 이용하세요.
+        </p>
+        <a href="/" class="btn-primary">
+          <svg
+            class="btn-icon"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M2.29289 5.70711L7.29289 10.7071L8 11.4142L8.70711 10.7071L13.7071 5.70711L12.2929 4.29289L9 7.58579V0H14C15.1046 0 16 0.895431 16 2V14C16 15.1046 15.1046 16 14 16H2C0.895431 16 0 15.1046 0 14V2C0 0.895431 0.895431 0 2 0H7L7 7.58579L3.70711 4.29289L2.29289 5.70711Z"
+              fill="white"
+            />
+          </svg>
+          앱 다운로드
+        </a>
+      </div>
+    </section>
+  </body>
+</html>
