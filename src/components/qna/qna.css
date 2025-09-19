@@ -1,0 +1,58 @@
+/* @import "./styles/base.css";
+@import "./styles/reset.css";
+@import "./styles/theme.css"; */
+
+@layer components {
+  article {
+    @apply px-6 py-10 grid-cols-1 leading-7 tracking-wide place-content-center w-full min-w-[500px] max-w-[1280px] mx-auto;
+  }
+
+  .title {
+    @apply text-4xl font-bold mb-9;
+  }
+
+  .q-box {
+    @apply border-b border-gray-300 hover:bg-blue-50;
+  }
+
+  .group {
+    @apply pl-5 py-4;
+
+    .question {
+      @apply flex justify-between;
+    }
+
+    .question-card {
+      @apply font-semibold;
+    }
+    /* 아이콘 */
+    svg {
+      @apply mx-6 h-6 w-6 shrink-0 self-center;
+    }
+    /* 닫힌 상태일 때 플러스 아이콘 */
+    .closed {
+      @apply block group-open:hidden;
+    }
+    /* 열린 상태일 때 마이너스 아이콘 */
+    .open {
+      @apply hidden group-open:block;
+    }
+  }
+
+  .show-box {
+    @apply my-6 font-normal text-gray-800;
+
+    p,
+    ol {
+      @apply mb-6;
+    }
+
+    ol {
+      @apply list-decimal pl-6;
+    }
+
+    span {
+      @apply block border-b-4 border-gray-300 font-semibold pb-1.5;
+    }
+  }
+}
