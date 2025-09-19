@@ -1,0 +1,42 @@
+:root {
+  /*  Primary Colors */
+  --color-primary: #1e88e5;
+  --color-primary-light: #6ab7ff;
+  --color-primary-dark: #005cb2;
+  --color-primary-secondary: #0075ff;
+
+  /*  Secondary Colors */
+  --color-secondary: #ff6f00;
+  --color-secondary-light: #ffa040;
+  --color-secondary-dark: #c43e00;
+
+  /*  Neutral (Grayscale) */
+  --color-white: #ffffff;
+  --color-light: #f5f5f5;
+  --color-gray-light: #e0e0e0;
+  --color-gray: #9e9e9e;
+  --color-gray-dark: #616161;
+  --color-black: #000000;
+
+  /*  Status Colors */
+  --color-success: #43a047;
+  --color-error: #e53935;
+  --color-warning: #fdd835;
+  --color-info: #29b6f6;
+
+  /*  UI Specific */
+  --color-background: #ffffff;
+  --color-surface: #f8f9fa;
+  --color-border: #dee2e6;
+  --color-text: #212121;
+  --color-text-light: #666666;
+
+  /* footer Colors */
+  --color-blue-primary : #0075ff;
+  --color-legal-primary :  #a6a6a6;
+
+
+  /*  Optional - Transparent & Overlay */
+  --color-overlay: rgba(0, 0, 0, 0.5);
+  --color-shadow: rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,222 @@
+@import "tailwindcss";
+/* @import "../../styles/theme.css"; */
+@import "../../styles/base.css";
+
+@theme {
+  --color-background: var(--color-blue-primary);
+  --color-font: var(--color-white);
+  --color-footer-legal: var(--color-legal-primary);
+
+  /* footer-wrapper  */
+  --wrapper-inline-size: 76.2%;
+  --wrapper-block-size: 81.8%;
+  --wrapper-padding: 3%;
+
+  /* 고객지원 센터  */
+  --support-inline-size: 9em;
+  --support-gab: 1.625em;
+
+  /* navigation(기업정보, 상품, 글로벌 시민의식) */
+  --nav-inline-size: 54.68%;
+  --nav-li-margin-block-end: 1em;
+  /* --nav-li-hover-color: var(--color-primary-dark); */
+
+  /* link area (f-book,youtube,instar,google,app) */
+  --link-inline-size: 42.42%;
+  --link-social-inline-size: 43.46%;
+  --link-social-min-size: 151px;
+  --link-social-div-gap: 0.2em;
+
+  /* legal area */
+  --legal-font-size: 0.63em;
+  --legal-content-small-flex: 4;
+  --legal-content-p-flex: 6;
+  --legal-link-inline-size: 50%;
+  --legal-link-between-magin: 2em;
+}
+
+@layer components {
+  .main-footer {
+    @apply flex 
+    justify-center
+     items-center 
+     bg-(--color-background)
+      h-(--color-background)
+      text-(--color-font);
+
+    .footer-wrapper {
+      @apply flex
+      flex-col
+      justify-between
+      w-(--wrapper-inline-size)
+      h-(--wrapper-block-size)
+      p-(--wrapper-padding)
+      bg-amber-400;
+
+      .support-center {
+        @apply flex
+        flex-col
+        gap-(--support-gab)
+        w-fit
+        bg-black;
+      }
+
+      nav {
+        @apply flex
+        justify-between
+        w-(--nav-inline-size)
+        pt-(--wrapper-padding);
+      }
+
+      ul {
+        @apply bg-amber-700
+        m-0
+        p-0;
+
+        li {
+          @apply mb-(--nav-li-margin-block-end);
+
+          &:hover {
+            @apply bg-amber-800;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    @apply flex
+    justify-between
+    mb-(--wrapper-padding)
+    bg-amber-950;
+
+    .footer-link {
+      @apply flex
+      justify-between
+      w-(--link-inline-size)
+      min-w-[400px]
+      items-center;
+
+      .footer-social {
+        @apply w-(--link-social-inline-size);
+
+        .footer-icons {
+          @apply flex
+          justify-between
+          items-center;
+        }
+      }
+
+      .footer-locale {
+        @apply min-w-(--link-social-min-size)
+        flex
+        justify-between
+        bg-red-700;
+
+        > div {
+          @apply flex
+          items-center
+          gap-(--link-social-div-gap);
+        }
+      }
+    }
+  }
+  .footer-legal {
+    @apply bg-fuchsia-400
+      flex
+      items-center
+      /* text-(--legal-font-size)
+      text-(--color-footer-legal) */;
+
+    .footer-legal-content {
+      @apply 
+      flex
+        items-center;
+
+      > small {
+        @apply 
+        pr-3.5
+        bg-amber-500;
+
+        &:last-child {
+          
+        }
+      }
+    }
+
+    .footer-legal-links {
+      @apply w-(--legal-link-inline-size)
+      text-end;
+
+      a {
+        @apply bg-amber-500
+        text-[(--color-footer-legal)];
+
+        &:last-child {
+          @apply ms-(--legal-link-between-magin);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  html {
+    @apply text-sm;
+  }
+  .main-footer {
+    .footer-wrapper {
+      --wrapper-inline-size: 100%;
+      @apply py-[6.59%]
+      px-[3.76%];
+      nav {
+        @apply w-full;
+      }
+      .footer-bottom {
+        flex-wrap: wrap;
+        .footer-link {
+          @apply w-full
+          mb-2.5;
+
+          .footer-social {
+            @apply w-[30.05%];
+          }
+        }
+        .footer-apps {
+          @apply bg-amber-800;
+          a {
+            @apply block;
+          }
+        }
+      }
+      .footer-legal {
+        @apply flex-wrap;
+        .footer-legal-content {
+          > small {
+            @apply flex-none
+            basis-[15.27%];
+          }
+        }
+        .footer-legal-links {
+          @apply text-start;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    @apply text-[11px];
+  }
+  .main-footer .footer-wrapper .footer-bottom .footer-link {
+    @apply flex-col
+    items-start
+    gap-4;
+  }
+  .main-footer .footer-wrapper .footer-bottom .footer-apps a {
+    @apply inline-block
+    mt-0
+    ml-4;
+  }
+}
