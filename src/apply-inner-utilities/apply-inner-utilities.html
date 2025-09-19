@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply</title>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div
+      class="m-4 pt-8 pr-7 pb-4 pl-8 flex flex-col gap-4 lg:grid lg:grid-cols-[1fr_1.3fr]"
+    >
+      <h1
+        class="text-3xl font-bold self-center xs:text-lg xs:self-start sm:text-2xl sm:self-start lg:text-3xl lg:self-center"
+      >
+        UT로 운행하기
+      </h1>
+      <div class="flex flex-col gap-5 xs:my-4">
+        <strong
+          class="flex flex-nowrap justify-between items-center my-4 text-[0.875rem]"
+        >
+          <p>기사로 가입하기</p>
+          <a class="border-b-[3px] pb-1 border-gray-200 inline-block" href="/"
+            >자세히 보기</a
+          >
+        </strong>
+        <form id="apply-form" class="flex flex-col flex-nowrap gap-3.5">
+          <div class="flex flex-row flex-nowrap gap-2.5">
+            <label for="username" class="sr-only">이름</label>
+            <input
+              class="border border-[var(--select-bd-color)] bg-[var(--select-bg-color)] p-2 focus:outline-none flex-1 min-w-0"
+              type="text"
+              id="username"
+              name="username"
+              placeholder="이름"
+            />
+            <label for="lastname" class="sr-only">성</label>
+            <input
+              class="border border-[var(--select-bd-color)] bg-[var(--select-bg-color)] p-2 focus:outline-none flex-1 min-w-0"
+              type="text"
+              id="lastname"
+              name="lastname"
+              placeholder="성"
+            />
+          </div>
+          <label for="email" class="sr-only">이메일</label>
+          <input
+            class="border border-[var(--select-bd-color)] [user-invalid]:border-[var(--error-email-color)] bg-[var(--select-bg-color)] p-2 focus:outline-none flex-1"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="이메일"
+            required
+          />
+          <div class="password-wrapper">
+            <label for="password" class="sr-only">비밀번호</label>
+            <input
+              class="peer border border-[var(--select-bd-color)] bg-[var(--select-bg-color)] p-2 focus:outline-none w-full"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="비밀번호"
+              required
+            />
+            <p
+              class="hidden text-[var(--error-message-color)] text-[0.7rem] my-2.5 leading-none peer-user-invalid-pw:block"
+            >
+              비밀번호를 다시 입력해주세요.
+            </p>
+          </div>
+          <label for="phone" class="sr-only">전화번호</label>
+          <input
+            class="border border-[var(--select-bd-color)] bg-[var(--select-bg-color)] p-2 focus:outline-none flex-1"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="전화번호"
+          />
+          <label for="city" class="sr-only">도시 선택</label>
+          <select
+            class="border border-[var(--select-bd-color)] bg-[var(--select-bg-color)] p-2 focus:outline-none appearance-none font-bold"
+            name="city"
+            id="city"
+          >
+            <option value="">Seoul, Korea, Republic of (South Korea)</option>
+            <option value="Busan">부산광역시</option>
+            <option value="Daegu">대구광역시</option>
+            <option value="Incheon">인천광역시</option>
+            <option value="Gwangju">광주광역시</option>
+            <option value="Daejeon">대전광역시</option>
+            <option value="Ulsan">울산광역시</option>
+            <option value="Sejong">세종특별자치시</option>
+            <option value="Gyeonggi">경기도</option>
+            <option value="Gangwon">강원특별자치도</option>
+            <option value="Chungbuk">충청북도</option>
+            <option value="Chungnam">충청남도</option>
+            <option value="Jeonbuk">전라북도</option>
+            <option value="Jeonnam">전라남도</option>
+            <option value="Gyeongbuk">경상북도</option>
+            <option value="Gyeongnam">경상남도</option>
+            <option value="Jeju">제주특별자치도</option>
+          </select>
+        </form>
+        <p class="text-[0.75rem] py-4">
+          ‘계속'을 선택하면 약관과 개인정보 보호정책을 확인했으며 이에 동의한
+          것으로 간주됩니다. 또한 위에 입력한 번호로 UT LLC 및 그
+          제휴가(통칭하여 ‘UT’)가 ARS 등을 이용하여 정보제공이나 마케팅 목적으로
+          발신하는 전화나 SMS 메시지를 수신하는 데 동의합니다. 마케팅 메시지
+          수신 동의는 UT 서비스 이용을 위한 필수 조건은 아닙니다. 더 이상 메시지
+          수신을 원하지 않으시는 경우, 89203번으로 ‘STOP’이라고 문자 메시지를
+          보내 수신을 거부하실 수 있습니다.
+        </p>
+        <div class="flex flex-row flex-nowrap w-auto items-center gap-10">
+          <button
+            class="rounded-sm bg-[var(--button-color)] text-white px-5 py-3 cursor-pointer"
+            type="submit"
+            form="apply-form"
+          >
+            가입하기
+          </button>
+          <div class="flex flex-row flex-nowrap gap-4">
+            <p class="account">이미 계정이 있으신가요?</p>
+            <a
+              class="border-b-[3px] pb-1 border-gray-200 font-semibold"
+              href="/"
+              >로그인</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

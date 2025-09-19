@@ -1,0 +1,32 @@
+:root {
+  --button-color: #0075ff;
+  --error-message-color: #e11900;
+  --error-email-color: #048848;
+  --select-bg-color: #f8f7f7;
+  --select-bd-color: #d3d3d3;
+}
+
+@layer utilities {
+  @media (min-width: 500px) and (max-width: 639px) {
+    .xs\:text-lg {
+      font-size: 1.125rem;
+    }
+    .xs\:self-start {
+      align-self: flex-start;
+    }
+  }
+
+  input[type="email"]:user-invalid {
+    border: 2px solid var(--error-email-color);
+    background-color: rgba(32, 218, 81, 0.1);
+  }
+
+  .peer:user-invalid ~ .peer-user-invalid-pw\:block {
+    display: block;
+  }
+
+  .peer:user-invalid {
+    border: 2px solid var(--error-message-color);
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+}
