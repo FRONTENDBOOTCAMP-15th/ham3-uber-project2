@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>헤더 영역</title>
+    <link
+      rel="shortcut icon"
+      href="/favicon/likelion.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="/favicon/likelion.svg" type="image/svg+xml" />
+    <link rel="preload" as="font" href="/font/suit/SUIT-Variable.woff2" />
+    <link rel="stylesheet" href="/font/suit/SUIT-Variable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="m-10">
+    <a href="/index.html">메인 페이지 이동</a>
+    <br />
+    <h1 class="my-5 text-3xl font-bold text-blue-950">헤더 영역</h1>
+    <nav class="nav">
+      <ul
+        class="ut-header bg-(--primary) flex items-center w-full h-22 max-w-[105rem] justify-between list-none"
+      >
+        <li class="ut-menu-wrapper bg-(--primary) px-2.5 py-2">
+          <ul
+            class="menu-list bg-(--primary) flex items-center list-none gap-4 text-white whitespace-nowrap"
+          >
+            <li class="ut-img ml-6">
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="39"
+                  height="39"
+                  fill="none"
+                  viewBox="0 0 192 192"
+                >
+                  <path
+                    fill="url(#a)"
+                    d="M156.161 67.062H130.56v78.006h25.601V67.062Z"
+                  />
+                  <path
+                    fill="url(#b)"
+                    d="M192 44.417H94.721v22.649H192V44.417Z"
+                  />
+                  <path
+                    fill="#fff"
+                    d="M69.12 44.417v80.518H25.601V44.417H0v60.392c0 27.299 19.937 42.778 47.359 42.778 27.421 0 47.358-15.479 47.358-42.778V44.417H69.12Z"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="a"
+                      x1="143.36"
+                      x2="143.36"
+                      y1="145.635"
+                      y2="68.906"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#EF5394" />
+                      <stop offset=".65" stop-color="#8B52A0" />
+                      <stop offset="1" stop-color="#5D4EA1" />
+                    </linearGradient>
+                    <linearGradient
+                      id="b"
+                      x1="95.34"
+                      x2="191.971"
+                      y1="55.74"
+                      y2="55.74"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#65C081" />
+                      <stop offset=".064" stop-color="#62B68B" />
+                      <stop offset=".222" stop-color="#5AA49E" />
+                      <stop offset=".382" stop-color="#5495AB" />
+                      <stop offset=".541" stop-color="#5089B3" />
+                      <stop offset=".697" stop-color="#4D80B8" />
+                      <stop offset=".851" stop-color="#4B7BBB" />
+                      <stop offset="1" stop-color="#497ABD" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li
+              class="info bg-(--primary) button-menu not-odd:max-[900px]:hidden flex gap-1"
+            >
+              <b>기업정보</b>
+              <button type="button" class="">
+                <svg
+                  id="arrow-svg"
+                  class="transition-transform duration-75"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path stroke="#fff" stroke-width="2" d="m18 9-6 6-6-6" />
+                </svg>
+              </button>
+            </li>
+            <li class="safety button-menu max-[900px]:hidden">
+              <b>안전</b>
+            </li>
+            <li class="support button-menu max-[900px]:hidden">
+              <b>고객지원</b>
+            </li>
+            <li class="service button-menu max-[900px]:hidden">
+              <b>차량 서비스</b>
+            </li>
+            <li class="driver button-menu max-[900px]:hidden flex gap-1">
+              <b>기사지원</b>
+              <svg
+                id="arrow-svg"
+                class="transition-transform duration-75"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path stroke="#fff" stroke-width="2" d="m18 9-6 6-6-6" />
+              </svg>
+            </li>
+          </ul>
+        </li>
+
+        <li class="ut-utility-wrapper bg-(--primary) p-2">
+          <ul
+            class="utility-list flex min-h-6 items-center space-x-2.5 list-none gap-1 text-white whitespace-nowrap"
+          >
+            <li class="lang button-menu flex items-center bg-(--primary) gap-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="#fff"
+                  d="m19.5 6-1.467 1.1a2 2 0 0 1-1.2.4h-3.358a1.578 1.578 0 0 0-.999 2.799l2 1.636a6 6 0 0 1 2.164 5.306l-.02.18a8.002 8.002 0 0 1-.523 2.087L15.5 21m-13-10.5 3.238-.54a2 2 0 0 1 2.302 2.302l-.135.807a3.337 3.337 0 0 0 1.8 3.533 2.503 2.503 0 0 1 1.308 2.846L10.5 21.5"
+                />
+                <circle cx="12" cy="12" r="9.5" stroke="#fff" />
+              </svg>
+              <button type="button">KO-KR</button>
+            </li>
+            <li
+              class="register bg-white p-2.5 text-[var(--primary)] rounded-full"
+            >
+              <b>가입하기</b>
+            </li>
+            <li class="more button-menu mr-4 invisible max-[900px]:visible">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="#fff"
+                  stroke-linecap="round"
+                  stroke-width="2"
+                  d="M18 10H6m12 4H6"
+                />
+              </svg>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
