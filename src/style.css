@@ -1,7 +1,9 @@
 @import "tailwindcss";
+
 @import "./visual-banner/visual-banner.css";
 @import "./about-inner/about-inner.css";
 
 @theme {
   --font-sans: "Pretendard Variable", sans-serif;
 }
+
