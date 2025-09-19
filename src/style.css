@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
-@theme{
-  --font-sans: "Pretendard Variable", sans-serif;
+@import "./components/qna/qna.css";
 
+@theme {
+  --font-sans: "Pretendard Variable", sans-serif;
 }
