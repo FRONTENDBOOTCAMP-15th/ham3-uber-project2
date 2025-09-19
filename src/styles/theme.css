@@ -31,6 +31,10 @@
   --color-text: #212121;
   --color-text-light: #666666;
 
+  /* footer Colors */
+  --color-blue-primary : #0075ff;
+  --color-legal-primary :  #a6a6a6;
+
   /*  Optional - Transparent & Overlay */
   --color-overlay: rgba(0, 0, 0, 0.5);
   --color-shadow: rgba(0, 0, 0, 0.1);
