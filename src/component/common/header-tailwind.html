@@ -81,30 +81,38 @@
                 </svg>
               </a>
             </li>
-            <li class="info max-[900px]:hidden flex gap-1">
+            <li
+              class="info bg-(--primary) button-menu not-odd:max-[900px]:hidden flex gap-1"
+            >
               <b>기업정보</b>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path stroke="#fff" stroke-width="2" d="m18 9-6 6-6-6" />
-              </svg>
+              <button type="button" class="">
+                <svg
+                  id="arrow-svg"
+                  class="transition-transform duration-75"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path stroke="#fff" stroke-width="2" d="m18 9-6 6-6-6" />
+                </svg>
+              </button>
             </li>
-            <li class="safety max-[900px]:hidden">
+            <li class="safety button-menu max-[900px]:hidden">
               <b>안전</b>
             </li>
-            <li class="support max-[900px]:hidden">
+            <li class="support button-menu max-[900px]:hidden">
               <b>고객지원</b>
             </li>
-            <li class="service max-[900px]:hidden">
+            <li class="service button-menu max-[900px]:hidden">
               <b>차량 서비스</b>
             </li>
-            <li class="driver max-[900px]:hidden flex gap-1">
+            <li class="driver button-menu max-[900px]:hidden flex gap-1">
               <b>기사지원</b>
               <svg
+                id="arrow-svg"
+                class="transition-transform duration-75"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -121,7 +129,7 @@
           <ul
             class="utility-list flex min-h-6 items-center space-x-2.5 list-none gap-1 text-white whitespace-nowrap"
           >
-            <li class="lang flex items-center bg-(--primary) gap-1">
+            <li class="lang button-menu flex items-center bg-(--primary) gap-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -135,14 +143,14 @@
                 />
                 <circle cx="12" cy="12" r="9.5" stroke="#fff" />
               </svg>
-              <b>KO-KR</b>
+              <button type="button">KO-KR</button>
             </li>
             <li
               class="register bg-white p-2.5 text-[var(--primary)] rounded-full"
             >
               <b>가입하기</b>
             </li>
-            <li class="mr-4 more invisible max-[900px]:visible">
+            <li class="more button-menu mr-4 invisible max-[900px]:visible">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
